@@ -12,19 +12,24 @@
             Notas App
         </h1>
         <div class="botones">
-            <div class="button"> Ver todas las notas</div>
-            <div class="button"> Ver notas archivadas</div>
-            <div class="button"> Ver notas activas</div>
+            <div class="button ver-todas"> Ver todas las notas</div>
+            <div class="button ver-archivadas"> Ver notas archivadas</div>
+            <div class="button ver-activas"> Ver notas activas</div>
         </div>
         <form>
-            <label for="Titulo"> </label>
+           
             <input type="text" id="titulo" name="titulo" placeholder="Titulo" maxlength="100" required>
             <br><br>
-            <label for="contenido"></label>
             <textarea id="contenido" name="contenido" placeholder="Describe la tarea" required></textarea>
             <br> <br>
             <button type="submit"> Guardar Tarea </button>
         </form>
+
+        <div class="notas-container">
+            <!-- aca se muestran las notas dinamicamente-->
+        </div>
     </div>
+    <script src="main.js"></script>
+
 </body>
 </html>
