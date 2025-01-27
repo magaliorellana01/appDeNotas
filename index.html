@@ -3,33 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>App de Notas</title>
 </head>
 <body>
-    <div class="principal">
-        <h1>
-            Notas App
-        </h1>
-        <div class="botones">
-            <div class="button ver-todas"> Ver todas las notas</div>
-            <div class="button ver-archivadas"> Ver notas archivadas</div>
-            <div class="button ver-activas"> Ver notas activas</div>
-        </div>
-        <form>
-           
-            <input type="text" id="titulo" name="titulo" placeholder="Titulo" maxlength="100" required>
-            <br><br>
-            <textarea id="contenido" name="contenido" placeholder="Describe la tarea" required></textarea>
-            <br> <br>
-            <button type="submit"> Guardar Tarea </button>
-        </form>
-
+    <div class="container">
+        <h1><img src="./media/notes.png"> Notas</h1>
+        <button class="btn"><img src="./media/edit.png"> Crear Nota </button>
         <div class="notas-container">
-            <!-- aca se muestran las notas dinamicamente-->
+            <!--<p contenteditable="true" class="input-box">
+                <img src="./media/delete.png">
+            </p> -->
         </div>
     </div>
-    <script src="main.js"></script>
+<script src="./js/script.js"></script>
 
 </body>
 </html>
